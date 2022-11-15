@@ -236,6 +236,6 @@ def main(win, width):
                     end = None
                     grid = make_grid(ROWS, width)
 
-    pygame.quit
+    pygame.quit()
 
 main(WIN, WIDTH)
