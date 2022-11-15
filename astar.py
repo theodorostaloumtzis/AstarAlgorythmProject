@@ -89,10 +89,10 @@ class Node:
         return False
 
 #using L or manhatan distance
-def h(p1, p2):     
+def h(p1, p2):
     x1, y1 = p1
     x2, y2 = p2
-    return abs(x1 - x2 ) + abs(y1 - y2) 
+    return abs(x1 - x2) + abs(y1 - y2)
 
 def reconstruct_path(came_from, current, draw):
     while current in came_from:
@@ -155,7 +155,7 @@ def make_grid(rows, width):
     for i in range(rows):
         grid.append([])
         for j in range(rows):
-            node = Node(i, j, gap,rows)
+            node = Node(i, j, gap, rows)
             grid[i].append(node)
 
     return grid
@@ -186,7 +186,7 @@ def get_clicked_pos(pos, rows, width):
     return row, col
 
 def main(win, width):
-    ROWS = 40
+    ROWS = 20
     grid = make_grid(ROWS, width)
     start = None
     end = None
