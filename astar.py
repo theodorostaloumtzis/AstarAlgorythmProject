@@ -1,7 +1,5 @@
-import pygame
-import math
 from queue import PriorityQueue
-
+import pygame
 
 WIDTH = 800
 WIN = pygame.display.set_mode((WIDTH, WIDTH))
@@ -127,6 +125,7 @@ def algorithm(draw, grid, start, end):
         if current == end:  
             reconstruct_path(came_from, end, draw)
             end.make_end()
+            start.make_start()
             return True
 
         for neighbour in current.neighbours:
