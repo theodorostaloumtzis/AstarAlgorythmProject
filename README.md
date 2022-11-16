@@ -7,23 +7,31 @@ Mandatory things to run the programm:
 -pygame library
 
 Installations
-
-    python download: https://www.python.org/downloads/release/python-3107/
-    IMPORTATNT!!! when installing pyhton select add to PATH for Windows.
+IMPORTATNT!!! when installing pyhton select add to PATH for Windows.
+    python download: 
+        https://www.python.org/downloads/release/python-3107/
 
 Windows
-    pip  install: https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
+    pip  install: 
+        https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
 
-    pygame install: https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
+    pygame install: 
+        https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
 
 MacOS
-    pip install: https://www.geeksforgeeks.org/how-to-install-pip-in-macos/
+    pip install: 
+        https://www.geeksforgeeks.org/how-to-install-pip-in-macos/
 
-    pygame install: https://www.geeksforgeeks.org/install-pygame-in-macos/ 
+    pygame install: 
+        https://www.geeksforgeeks.org/install-pygame-in-macos/ 
 
 Linux
-    pip install: https://www.tecmint.com/install-pip-in-linux/
+    pip install: 
+        https://www.tecmint.com/install-pip-in-linux/
 
-    pygame install: https://www.geeksforgeeks.org/install-pygame-in-linux/
-    The link is for debian based distribution you can change the apt to your packet manager.
+The link is for debian based distribution you can change the apt to your packet manager.
+    pygame install: 
+        https://www.geeksforgeeks.org/install-pygame-in-linux/
+
+    
 
