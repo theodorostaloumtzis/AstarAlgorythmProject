@@ -7,25 +7,25 @@ Mandatory things to run the programm:
 -pygame library
 
 Installations
-IMPORTATNT!!! when installing pyhton select add to PATH for Windows.
+    IMPORTATNT!!! when installing pyhton select add to PATH for Windows.
     python download: 
         https://www.python.org/downloads/release/python-3107/
 
-Windows
+Windows:
     pip  install: 
         https://www.geeksforgeeks.org/how-to-install-pip-on-windows/
 
     pygame install: 
         https://www.geeksforgeeks.org/how-to-install-pygame-in-windows/
 
-MacOS
+MacOS:
     pip install: 
         https://www.geeksforgeeks.org/how-to-install-pip-in-macos/
 
     pygame install: 
         https://www.geeksforgeeks.org/install-pygame-in-macos/ 
 
-Linux
+Linux:
     pip install: 
         https://www.tecmint.com/install-pip-in-linux/
 
