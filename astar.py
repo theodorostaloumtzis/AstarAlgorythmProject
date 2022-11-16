@@ -88,8 +88,8 @@ class Node:
     def  __lt__(self, other):
         return False
 
-#using L or manhatan distance
-def h(p1, p2):
+#using L or Manhattan distance
+def heuristicManhattan(p1, p2):
     x1, y1 = p1
     x2, y2 = p2
     return abs(x1 - x2) + abs(y1 - y2)
@@ -110,7 +110,7 @@ def algorithm(draw, grid, start, end):
     g_score = {node: float("inf") for row in grid for node in row}
     g_score[start] = 0
     f_score = {node: float("inf") for row in grid for node in row}
-    f_score[start] = h(start.get_pos(), end.get_pos())
+    f_score[start] = heuristicManhattan(start.get_pos(), end.get_pos())
 
     open_set_hash = {start}
 
@@ -134,7 +134,7 @@ def algorithm(draw, grid, start, end):
             if temp_g_score < g_score[neighbour]:
                 came_from[neighbour] = current
                 g_score[neighbour] = temp_g_score
-                f_score[neighbour] = temp_g_score + h(neighbour.get_pos(), end.get_pos())
+                f_score[neighbour] = temp_g_score + heuristicManhattan(neighbour.get_pos(), end.get_pos())
                 if neighbour not in open_set_hash:
                     count += 1
                     open_set.put((f_score[neighbour], count, neighbour))
@@ -186,7 +186,7 @@ def get_clicked_pos(pos, rows, width):
     return row, col
 
 def main(win, width):
-    ROWS = 20
+    ROWS = 20                    #you can change 20 width dividers of WIDTH = 800 to cahnge the amount of rows and collumns.
     grid = make_grid(ROWS, width)
     start = None
     end = None
@@ -229,7 +229,7 @@ def main(win, width):
                         for node in row:
                             node.update_neighbours(grid)
                         
-                    algorithm(lambda: draw(win, grid, ROWS, width), grid ,start, end) #using lamda to pass draw function as an argument to algorithm
+                    algorithm(lambda: draw(win, grid, ROWS, width), grid, start, end) #using lamda to pass draw function as an argument to algorithm
             
                 elif event.key == pygame.K_c:
                     start = None
